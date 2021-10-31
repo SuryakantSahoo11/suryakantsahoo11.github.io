@@ -1,0 +1,14 @@
+{
+  "name": "@observablehq/three-js",
+  "main": "4d9b7665f00a916c@320.js",
+  "version": "320.0.0",
+  "homepage": "https://observablehq.com/@observablehq/three-js",
+  "author": {
+    "name": "Observable",
+    "url": "https://observablehq.com/@observablehq"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
