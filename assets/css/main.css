@@ -3997,3 +3997,14 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+	
+	.node {
+		stroke: #fff;
+		stroke-width: 1.5px;
+	  }
+	  
+	.link {
+		stroke: #999;
+		stroke-opacity: .6;
+	  }
+	  
