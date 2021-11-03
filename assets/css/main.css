@@ -3999,13 +3999,13 @@ input, select, textarea {
 	}
 	
 	.node {
-		stroke: #fff;
+		stroke: rgba(233, 160, 2, 0.329);
 		stroke-width: 1.5px;
 	  }
 	  
 	.link {
-		stroke: #999;
-		stroke-opacity: .6;
+		stroke: rgb(153, 255, 128);
+		stroke-opacity: 0.6;
 	  }
 	
 	/*text{
