@@ -335,8 +335,8 @@ var graph = {
     {"source":76,"target":58,"value":1}
   ]
 };
-var width = 400,
-    height = 400;
+var width = 300,
+    height = 300;
 
 var color = d3.scale.category20();
 
