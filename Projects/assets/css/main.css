@@ -204,6 +204,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+
 		body:after {
 			pointer-events: none;
 			content: '';
@@ -216,7 +217,7 @@ input, select, textarea {
 			z-index: -1;
 			background-attachment: fixed;
 			background-color: #e1e6e1;
-			background-image: url("../../images/overlay.png"), url("../../images/network_bg.gif");
+			background-image: url("../../images/overlay.png"), url("../../images/brain2_bg.gif");
 			background-repeat: repeat, repeat-x;
 			background-size: 128px 128px, cover;
 		}
