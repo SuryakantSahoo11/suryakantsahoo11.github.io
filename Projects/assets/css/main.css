@@ -216,7 +216,7 @@ input, select, textarea {
 			z-index: -1;
 			background-attachment: fixed;
 			background-color: #e1e6e1;
-			background-image: url("../../images/overlay.png"), url("../../images/bg.jpg");
+			background-image: url("../../images/overlay.png"), url("../../images/network_bg.gif");
 			background-repeat: repeat, repeat-x;
 			background-size: 128px 128px, cover;
 		}
@@ -3687,3 +3687,102 @@ input, select, textarea {
 			}
 
 	}
+
+/* Footer */
+
+	#footer {
+		width: 100%;
+		padding: 1.5em;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-justify-content: space-between;
+		-webkit-justify-content: space-between;
+		-ms-justify-content: space-between;
+		justify-content: space-between;
+		position: relative;
+		z-index: 10002;
+	}
+
+		#footer > section:first-child {
+			text-align: left;
+			max-width: 36em;
+			padding-right: 2em;
+		}
+
+		#footer > section:last-child {
+			text-align: right;
+			max-width: 36em;
+		}
+
+		#footer h2 {
+			font-size: 2.25em;
+			margin: 0 0 1em 0;
+		}
+
+		#footer .copyright li {
+			display: inline-block;
+			margin-left: 1em;
+			padding-left: 1em;
+			border-left: solid 1px rgba(255, 255, 255, 0.25);
+			line-height: 1em;
+		}
+
+			#footer .copyright li:first-child {
+				border-left: 0;
+				margin-left: 0;
+				padding-left: 0;
+			}
+
+		@media screen and (max-width: 980px) {
+
+			#footer {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+			}
+
+				#footer > section:first-child {
+					width: 100%;
+					padding-right: 0;
+				}
+
+				#footer > section:last-child {
+					text-align: left;
+					margin: 1.5em 0 0 0;
+					width: 100%;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#footer {
+				text-align: center;
+				padding: 3em;
+			}
+
+				#footer > section:first-child {
+					text-align: center;
+					max-width: 100%;
+				}
+
+				#footer > section:last-child {
+					text-align: center;
+					max-width: 100%;
+				}
+
+				#footer .copyright li {
+					display: block;
+					margin: 0.75em 0 0 0;
+					padding-left: 0;
+					border-left: 0;
+				}
+
+					#footer .copyright li:first-child {
+						margin-top: 0;
+					}
+
+		}
