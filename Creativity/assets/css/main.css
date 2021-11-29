@@ -179,7 +179,7 @@ input, select, textarea {
 		color: #fff;
 		letter-spacing: -0.05em;
 	}
-
+		
 	strong, b {
 		color: #fff;
 		color: rgba(255, 255, 255, 0.85);
@@ -371,7 +371,7 @@ input, select, textarea {
 		}
 
 			#main .items > :last-child {
-				border-right: solid 10px #ffffff;
+				border-right: solid 10px #ffffff00;
 			}
 
 		#main .item {
@@ -385,7 +385,7 @@ input, select, textarea {
 			flex-shrink: 0;
 			margin: 5px;
 			height: 16em;
-			box-shadow: 0 0 0 10px #ffffff;
+			box-shadow: 0 0 0 10px #ffffff3d;
 		}
 
 			#main .item.span-1 {
