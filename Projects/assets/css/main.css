@@ -220,6 +220,7 @@ input, select, textarea {
 			background-image: url("../../images/overlay.png"), url("../../images/brain2_bg.gif");
 			background-repeat: repeat, repeat-x;
 			background-size: 128px 128px, cover;
+			opacity: 0.4;
 		}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
