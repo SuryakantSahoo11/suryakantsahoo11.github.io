@@ -216,11 +216,11 @@ input, select, textarea {
 			height: 100%;
 			z-index: -1;
 			background-attachment: fixed;
-			background-color: #e1e6e1;
-			background-image: url("../../images/overlay.png"), url("../../images/brain2_bg.gif");
+			background-color: #000000;
+			background-image: url("../../images/overlay1.png"), url("../../images/brain2_bg.gif");
 			background-repeat: repeat, repeat-x;
 			background-size: 128px 128px, cover;
-			opacity: 0.4;
+			
 		}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
