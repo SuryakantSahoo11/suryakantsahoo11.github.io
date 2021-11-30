@@ -216,8 +216,8 @@ input, select, textarea {
 			height: 100%;
 			z-index: -1;
 			background-attachment: fixed;
-			background-color: #000000;
-			background-image: url("../../images/overlay1.png"), url("../../images/brain2_bg.gif");
+			background-color: #f0efef;
+			background-image: url("../../images/overlay_b.png"), url("../../images/brain2_bg.gif");
 			background-repeat: repeat, repeat-x;
 			background-size: 128px 128px, cover;
 			
