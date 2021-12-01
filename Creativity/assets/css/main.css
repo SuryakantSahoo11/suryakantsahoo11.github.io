@@ -528,7 +528,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			#main .item {
-				height: 14em;
+				height: 17em;
 			}
 
 				#main .item.span-1 {
