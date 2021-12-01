@@ -371,7 +371,7 @@ input, select, textarea {
 		}
 
 			#main .items > :last-child {
-				border-right: solid 10px #ffffff00;
+				border-right: solid 10px #ffffff7c;
 			}
 
 		#main .item {
@@ -385,7 +385,7 @@ input, select, textarea {
 			flex-shrink: 0;
 			margin: 5px;
 			height: 16em;
-			box-shadow: 0 0 0 10px #ffffff3d;
+			box-shadow: 0 0 0 10px #ffffff7c;
 		}
 
 			#main .item.span-1 {
