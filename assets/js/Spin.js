@@ -12,7 +12,7 @@ var padding = {top:5, right:5, bottom:5, left:5},
                     {"label":"Instagram",  "value":2},
                     {"label":"Facebook",  "value":3},
                     {"label":"Blogspot",  "value":4},
-                    {"label":"Five",  "value":5},
+                    {"label":"Mail",  "value":5},
         ];
         var svg = d3.select('#chart')
             .append("svg")
@@ -94,6 +94,12 @@ var padding = {top:5, right:5, bottom:5, left:5},
                         window.open("https://www.linkedin.com/in/suryakantsahoo11/", "_blank");
                     } else if (valcheck == 2) {
                         window.open("https://www.instagram.com/sahoography/?hl=en", "_blank");
+                    } else if (valcheck == 3) {
+                        window.open("https://www.facebook.com/sahoography", "_blank");
+                    } else if (valcheck == 4) {
+                        window.open("https://sahoography.blogspot.com", "_blank");
+                    } else if (valcheck == 5) {
+                        window.open("mailto:sahoography@gmail.com", "_blank");
                     }
               
                     /* Comment the below line for restrict spin to sngle time */
@@ -117,7 +123,7 @@ var padding = {top:5, right:5, bottom:5, left:5},
             .attr("x", 0)
             .attr("y", 8)
             .attr("text-anchor", "middle")
-            .text("SPIN")
+            .text("ABOUT")
             .style({"font-weight":"bold", "font-size":"15px"});
         
         

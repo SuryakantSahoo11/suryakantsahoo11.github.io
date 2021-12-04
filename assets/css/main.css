@@ -3885,7 +3885,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 6em 0 4em 0 ;
+		padding: 3em 0 3em 0 ;
 		background-color: #1d242a;
 		text-align: center;
 	}
@@ -4016,18 +4016,18 @@ input, select, textarea {
 	#chart{
 		position:center;
 		width: 300px;
-		height:222px;
+		height:350px;
 		top:0;
 		left:0;
 		/*width: 30%;*/
     	margin: 0 auto;
 		opacity: 0.45;
-		transition: opacity 2.2s;
-		transition: height 1.5s;
+		transition: opacity 2s;
+		/*transition: height 1.5s;*/
 	}
 	#chart:hover{
 		opacity: 0.9;
-		height:300px;
+		/*height:300px;*/
 	}
 	/*#question{
 		position: relative;
