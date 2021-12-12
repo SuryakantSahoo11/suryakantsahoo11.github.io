@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Touchless GUI Control</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="/index.html">Suryakant Sahoo</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="/index.html">Home</a></li>
+											<li><a href="/Creativity/index.html">The Right Side</a></li>
+											<li><a href="/Projects/index.html">The Left Side</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Touchless GUI Control</h2>
+							<p>Dabbling into the concepts of HCI and <br> trying to control the GUI using touchless techniques</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+								
+								<h4>Motivation (Why)</h4>
+								<p>Can  you  imagine  interaction  with  the  Computer system  without  using  mouse  and keyboard  kind  of conventional peripheral devices? The recent trends of research are focused on using minimum set of devices to interact with the Computer system, and Matlab is one of them. This project is organized around the development  of  a  <b>Finger  Tracking  algorithm</b>  in order  to  establish  interface  for  <b>Human  Computer Interaction using Matlab </b>and implementing that  algorithm  to  create  an  application  that  can  be used to perform clicking operation as per the counting fingers. </p>
+								
+								<hr />
+
+								<h4>Techtics (What & How)</h4>
+								<p> During this mini project we were learning different <b>Image processing techniques</b> and we decided to control GUI using the same. <span class="image right"><img src="/Projects/images/gallery/Project_pics/PD_FD_GUI/Edge Detection.jpg" alt="" /></span>
+								<br> We dabbled into many different techniques that could be utilized to achive this task, techniques like <b>Edge detection</b> was initally used to determine the bell curve formed by the finger tip and we tried to use that method. But we soon realize that we would need something more like kinect or any other device that will also measure the positional depth of hte filngure or any other object having similar bell curve. 
+								<br> So we moved to next method, <b>Palm detection</b>. Here we though of mapping the movement of the palm with that of the cursor then wondered that this would be so cool if we had a wide screen and could play games based on such a simple technique. But we also realized that the tsk we were aming for needed a bit more accuracy. <span class="image right"><img src="/Projects/images/gallery/Project_pics/PD_FD_GUI/hand_detect.jpg" alt="" /></span></p>
+								<p> Finally, we landed to the <b>Color detection </b>technique, did some initial test runs using pen caps. Used orange markers on the fingers and were able to move the cursor using the index finger and left click with increasing the number of fingers (2). Similarly, right click was mapped to 3 fingers shown together.
+								<br> We used various steps to identify the desired color (orange), <b>RGB detection, Gray Scalling, Pixel enhancement, thresholding and binary conversion</b>. Running these conversions and JAVA Robot class, we were able to achive the realtime touchless control of the cursor</p>
+								<!--<p><span class="image left"><img src="/Projects/images/gallery/Project_pics/PD_FD_GUI/Block Diagram.JPG" alt="" /></span><span class="image right"><img src="/Projects/images/gallery/Project_pics/PD_FD_GUI/Color marker Detection.gif" alt="" /></span></p>
+								<br>
+								<br>-->
+								
+                                <hr />
+
+								<h4>Reflection & Application (now & next)</h4>
+								<p>In this study, finger tracking based a virtual mouse application has been designed and implemented using a regular webcam. The motivation was to create an object tracking application to interact with the computer, and develop a virtual human computer interaction device.</p>
+								<p>We were able to develop a prototype of mouse moving without using hardware or any wires. This was an approach to make an intelligent and next generation Graphic User Interface. 
+								<br> We later used this project as a steping stone to create Cooper and Airpen. 	
+								</p>
+                                <div class="row gtr-50 gtr-uniform">
+									<div class="col-60"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/PD_FD_GUI/Block Diagram.JPG" alt="" /></span></div>
+									<div class="col-60"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/PD_FD_GUI/Color marker Detection.gif" alt="" /></span></div>
+								</div>
+								<iframe width="50%" height="300" src="https://www.youtube.com/embed/-MLBCOwEFqE" title="Touchless GUI Control" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <hr />
+								<h4>Tools & Technology</h4>
+								<p \>
+									<div class="row gtr-50 gtr-uniform">
+                                        <div class="col-1"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/HCI logo png.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/Matlab logo png.png" alt="" /></span></div>
+                                        <div class="col-1"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/Java logo png.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/webcam png.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/windows logo png.png" alt="" /></span></div>
+                                    </div>
+								
+								<hr />
+								<h4>Creators</h4>
+								<p>Suryakant Sahoo and Saket Suman</p>
+                                
+                        </section>
+					</article>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/sahoography" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/sahoography" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.linkedin.com/in/suryakantsahoo11" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:sahoography@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Suryakant Sahoo</li><li>Design: <a href="https://www.instagram.com/sahoography/?hl=en">sahoography</a></li>
+					</ul>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>
