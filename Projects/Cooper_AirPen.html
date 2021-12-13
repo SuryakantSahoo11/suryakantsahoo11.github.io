@@ -47,7 +47,9 @@
 								
 								<h4>Motivation (Why)</h4>
 								<p>We intended to create a futuristic technology that will allow humans to interact with machines with gestures, voice and pointers. <b>Cooper</b> is also designed to help people who lack computer knowledge and make it as simple as talking to the machine to operate on it. <b>Airpen</b> was extended to make Cooper more tangible while interacting with the computer, it also serves as a great tool to take <b>digital notes</b>. Best thing about Cooper apart from its functionality and potential was its cost effectiveness; we implemented this <b>within $1.</b></p>
-								
+								<audio controls autoplay>
+									<source src="/Projects/images/gallery/Project_pics/Cooper_AirPen/Cooper_intro.wav" type="audio/wav">
+								</audio>
 								<hr />
 
 								<h4>Techtics (What & How)</h4>
@@ -57,8 +59,10 @@
                                 <b>1. Image Processing : </b>We used the image processing sequence to convert the image to detect the color of the Airpen (red) for this we used <b>median filtering</b> followed by converting to <b>gray scale</b> and then to <b>binary scale</b>. then we mapped the centre of this detected pointer's centre to the mouse movements using <b>JAVA robot class</b>. <br>
 								<br><span class="image left"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/vSP_step.jpg" alt="" /></span><b>2. Speech Processing : </b>We used the Linear Predictive Coding (LPC) Speech processing technique for feature extraction of the voice commands from the users. The basic idea behind linear predictive analysis is that a speech sample can be approximated as a linear combination of past speech samples. By minimizing the sum of the squared differences (over a finite interval) between the actual speech samples and the linearly predicted ones, a unique set of predictor coefficients can be determined. All the required steps such as - <b>Pre-emphasis, Frame Blocking, Windowing, Autocorrelation Analysis, LPC Analysis and LPC Parameter Conversion to Cepstral coefficients</b> were utilized respectively to extract features for further processing. Then <b> Gaussian Mixture Modeling </b> was applied to maximize the likelihood of the parameter for recognition. First a recorded input voice command dataset from many users was collected and stored to train Cooper, there after we enabled direct microphone access to the users to see how the testing worked, we tuned the thresholding parameters (for de-noising) and used <b>Mahalanobis distance matching</b> to match the training data with the testing data for recognizing the voice commands. <br> 
 								<br><span class="image right"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/cooper_gui.jpg" alt="" /></span><b>3. Graphic User Interface : </b>We used Matlab Design Environment (GUIDE) to design a GUI for Cooper. We put togeter a menu that show cases the various features of Cooper and Airpen, this helped to explain the project in a structured manner to the evaluation pannel. We extended the use of the GUI by our Airpen and JAVA robot class to enable remote 'touchless' use of the computer. <br>
-								<br><b>4. Voice Assistance : </b>Many sets of my voice was recorded and used as audio playback to assist the GUI use and make Cooper more interactive, just like talking to a friend.</p>
-
+								<br><b>4. Voice Assistance : </b>Many sets of my voice was recorded and used as audio playback to assist the GUI use and make Cooper more interactive, just like talking to a friend. Below is a playback example.</p>
+								<audio controls>
+									<source src="/Projects/images/gallery/Project_pics/Cooper_AirPen/Cooper_choose.wav" type="audio/wav">
+								</audio>
 								<hr />
 
 								<h4>Reflection & Application (now & next)</h4>
@@ -81,8 +85,10 @@
 								<br>	3. The light intensity on the webcam was a real problem. The webcam got stuck when more light was flashed on it.
 								<br>	4. Few words were effectively trained using LPC technique. For more number of words to be recognised, large database was required. Also, similar types of word were difficult to recognise.
 								<br>		Different feature extraction and modelling technique can be used like MFCC, Pattern recognition & Hidden Markov Method (HMM) etc
-									</p>
-                                
+								</p>
+                                <audio controls>
+									<source src="/Projects/images/gallery/Project_pics/Cooper_AirPen/Cooper_thank you.wav" type="audio/wav">
+								</audio>
                                 <hr />
                                 
                                 
