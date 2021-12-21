@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Machine First Operations</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="/index.html">Suryakant Sahoo</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="/index.html">Home</a></li>
+											<li><a href="/Creativity/index.html">The Right Side</a></li>
+											<li><a href="/Projects/index.html">The Left Side</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Machine first Operations</h2>
+							<p>Stiching together multifunctionality AI powered tools like 
+							<br> Dynatrace, ServiceNow, Ignio & Power-BI to 
+							<br> create an end to end Self-heal mechanism. 
+							<br> Starting from sensing of the issue to notifying, 
+							<br> automated resolution and trend analysis</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+								
+								<h4>Motivation (Why)</h4>
+								<p>Often in any IT environment a large amount of load falls on the shoulders of the operations team. To keep the business application up, with all the functionalities intact and running with best performance, to keep the user satisfied. While ensuring all the necessary components are smooth, people in operations team get overburden and lose a grip of their work-life balance. 
+								<br> To help operations team, I designed and implemented an AiOps solution by stiching multiple tools after reseaching about their functionalites, stiching them together and integrating into an end to end workflow to Self-Heal issues 24x7.</p>
+								
+								<hr />
+
+								<h4>Techtics (What & How)</h4>
+								<p>There are many different tools and techniquies that I had encountered, learned about and utilized in the IT environment. While serving as <b>Application Performance Management (APM) and Automation/AI Architect and Lead</b> I designed an end to end solution for the overworked Operations team.
+								<br>To explain this solution, lets start with what kinds of different layers are needed to be understood thoroughly and stiched together to work in harmony, if even a single timing or integration is missed, the whole Self-Heal mechanism will collapse.</p>
+								<br>
+                                <h4>Layer 1 - Server, Middleware and Hosted Applications</h4>
+								<p><span class="image left"><img src="/Projects/images/gallery/Project_pics/MachineFirstOperations/Serv_Mid_App.png" alt="" /></span> This layer constitutes of the <b>Servers</b> that are hosting the application and the <b>middlewares</b> that are used to run the <b>applications</b> smoothly. 
+								<br> A server can have different <b>OS flavors</b> such as Linux, Windows, Solaris, AIX, HP-UX etc. Each of which have different properties, architecture and integration points. 
+								<br> Next is the <b>middleware</b> that is used to host the application or integrate the message passing of the interconnected applications, such as JVM, Weblogics, Wildfly, JBoss, WAS, MQ, etc. Again, these are very different from each other and a thorough knowledge of what properties they have is required to correctly fetch the data from them.
+								<br> Finally, we have the <b>Applications</b> we would mostly be focusing on JAVA and Spring based application hosted on <b>Linux based servers</b>. Most application will have a frontend and a backend, both of which provides valuable information on how the <b>bussiness value & user satisfaction</b> is impacted during any issue.</p>
+                                <br>
+								<h4>Layer 2 - Sensing and Monitoring</h4>
+								<p><span class="image left"><img src="/Projects/images/gallery/Project_pics/MachineFirstOperations/Sensing_monitor.png" alt="" /></span> Layer two is the one of the most important layers, as the <b>accuracy of the issue tracing</b> depends on this layer. There are many monitoring tools in the market with multifacet capabilities, so picking of the correct tool for the requirement is of absolute importance. 
+								<br>These tools must be capable of tarcing events, logs and various metrices from the servers, processes, application services, user requests, message queues, network load balancers, firewalls etc. Here, we will be selecting <b>'Dynatrace'</b>; one the market leading APM tool.</p>
+								<br>
+								<h4>Layer 3 - Ticketing, Reporting and Visualization</h4>
+								<p><span class="image left"><img src="/Projects/images/gallery/Project_pics/MachineFirstOperations/tick_repo_viz.png" alt="" /></span> The 3rd layer is used for <b>Service Management</b> there are various companies that provide this solution, we would utilize on <b>ServiceNow</b> for Service Requests, User Requests, Incident creation, Change, Problem and Knowledge Managment etc. <b>Power BI</b> will be our go to tool for Reporting and Visualization, we could also choose <b>tablue</b> as an alternate, which gives us similar capabilities as that of Power-BI.
+								<br> This layer interfaces the Operations Team with the system and the users who want to raise an issue in form of a ticket. Additionally, the monitoring layer senses anomalies and reports in form of incidents in this layer that is then handled by the Operations team. We will use thias layer to also connect with our data driven automated workflow. </p>   
+								<br>
+								<h4>Layer 4 - Orchestation and Automation</h4>
+								<p><span class="image left"><img src="/Projects/images/gallery/Project_pics/MachineFirstOperations/Orc_Auto.png" alt="" /></span> The last layer is where the actions, their sequence and timings are defined; here is where the magic happens.
+								<br> We need a good Orcestration and Automation engine to ensure that the Workflow are stable and are timely executed. We are going to use various sripts (python, powershell, bash, etc) and schedulers such as cronjobs, batch jobs (BMC Control M), Windows Task Schedulers, etc. 
+								<br> We will use <b>TCS Digitate - Ignio AiOps and Work Load Management</b> as the automation engine, for desingning the workflows and most importantly to pass the contextual data and leverage AI. </p>
+								<hr />
+
+								<h4>Reflection & Application (now & next)</h4>
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-8"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/MachineFirstOperations/MachineFirstOps_Workflow.gif" alt="" /></span></div>
+								</div>
+								<p>Above is an example workflow of one implementation. 
+								<br> We sense and monitor application level anomaly for a Java based application using Dynatrace. When a specific JVM (java virtual machine) related anomaly say <b>Memory Garbage Collection High</b> along with <b>User request error</b> is seen, a ticket in ServiceNow is generated in Ignio's queue. This ticket is picked by Ignio AiOps and then Action and Validation Workflow respective to this ticket is triggered. <b>Https resonse code are validated</b> and based on which <b>JBoss is restarted</b> then another validation is made to check if the issue is now resolved. Ticket is <b>automatically resolved</b> once issue is fixed by the automated Self-Heal action. 
+								<br> In case the issue is not fixed even after the action is taken, the <b>ticket is passed to responsible operations team's queue</b> to resolve manually. <b>Worknotes are automatically updated</b> by Ignio in ServiceNow ticket.
+								<br> We use <b>data driven approach</b> and actions are driven based on which level of issue data is sensed. <b>Ignio AI</b> also predicts future anomalies that can come up based on the pattern seen in the past issues. <b>Dynatrace AI</b> automatically reduces false alerts based on past data reference. <b>Rule based</b> and <b>Component Relationship Map based</b> context is used to guide the tickets to correct responsible operations team by <b>ServiceNow ITOM</b> (Information Technology Operations Manager).
+								<br> <b>Contextual Knowledge</b> from the Operations team is essential and should be dynamically stored and updated. Workflow is designed keeping in mind various usecases and issues that can come up because of this automation. Regrious testing is performed to ensure the automated self-heal action doesn't have <b>adverse consequences</b>.</p>
+								<p></p>
+                                
+                                <hr />
+								
+								<h4>Tools & Technology</h4>
+								<p \>
+									<div class="row gtr-50 gtr-uniform">
+                                        <div class="col-1"><span class="image fit"><img src="/images/dynatrace-logo.png" alt="" /></span></div>
+                                        <div class="col-1"><span class="image fit"><img src="/images/Python.jpg" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/images/ansible-logo.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/images/windows-server-logo.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/images/JSON.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/images/linux.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/images/solaris.jpg" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/images/F5_Networks-Logo.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/MachineFirstOperations/IBM.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/images/jmx.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/images/scheduler.jpg" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/MachineFirstOperations/slack.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/MachineFirstOperations/TCS logo png.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/MachineFirstOperations/iGNIO AIOps.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/MachineFirstOperations/jira_software_logo.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/MachineFirstOperations/splunk.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/MachineFirstOperations/Power BI Logo png.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/MachineFirstOperations/powershell.png" alt="" /></span></div>
+										<div class="col-1"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/MachineFirstOperations/Service Now logo png.png" alt="" /></span></div>
+										
+                                    </div>
+								<hr />
+								<h4>Creators</h4>
+								<p>Suryakant Sahoo</p>
+                                <!--</div>-->
+
+                                <!--<hr />
+                                
+                                <h4>Left &amp; Right example</h4>
+                                <p><span class="image left"><img src="/images/pic03.jpg" alt="" /></span>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien. Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
+                                <p><span class="image right"><img src="/images/pic02.jpg" alt="" /></span>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius. Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat. Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui.</p>-->
+                        </section>
+					</article>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/sahoography" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/sahoography" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.linkedin.com/in/suryakantsahoo11" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:sahoography@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Suryakant Sahoo</li><li>Design: <a href="https://www.instagram.com/sahoography/?hl=en">sahoography</a></li>
+					</ul>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>
