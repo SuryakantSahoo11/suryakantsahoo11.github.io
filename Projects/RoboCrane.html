@@ -53,43 +53,43 @@
 							<h2>RoboCrane</h2>
 							<p>An attempt to map the physical movements of the hands 
 							<br> to physical movements of a crane arm & car wirelessly
-							<br> by using a hand wearable device.</p>
+							<br> by using a hand wearable device</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 								
 								<h4>Motivation (Why)</h4>
-								<p>Robotics is a field concerned with intelligent connection of perception to an action. With so many switches and buttons involved, controlling of robotic gadget could become a task in itself. To ease this, we wanted to map the the physical movements of the hands to physical movements of a crane arm & car by using a hand wearable device, thus creating a friendly and more naturalistic way to interface with robots.</p>
+								<p>Robotics is a field concerned with the intelligent connection of perception to action. With so many switches and buttons involved, controlling robotic gadgets could become a task in itself. To ease this, we wanted to map the physical movements of the hands to the physical movements of a crane arm & car by using a hand wearable device, thus creating a friendly and more naturalistic way to interface with robots.</p>
 								
 								<hr />
 
 								<h4>Techtics (What & How)</h4>
 								<p>We designed two wearable sensors – one controlling the motion of the crane (the direction it is moving in, the wheels) and the other controlling the functional motions of the crane. The motion controller has a joystick linked to the camera placed in the crane; providing visibility to the operator. The functional controller wirelessly sends signals to the crane to mimic the motions made by the operator. 
-								<br> We used combination of <b>Arduino Nano, Uno</b> and <b>Due</b> for creating the hand wearable devices, controller on the crane car and arm respectively.</p>
+								<br> We used a combination of <b>Arduino Nano, Uno</b>, and <b>Due</b> for creating the hand wearable devices, controller on the crane car and arm respectively.</p>
                                 <h4>Left Hand Controller (L-Tx)</h4>
-								<p><span class="image left"><img src="/Projects/images/gallery/Project_pics/RoboCrane/L_Tx_block.png" alt="" /></span> For the <b>Left hand wearable</b> device we designed the circuit using <b>Arduino Nano</b> with <b>Accelerometer (tilt sensor)</b> to transmit the tilt position of the top of the palm on which the board was mounted. The <b>change in the tilt</b> was used to move the Crane Car in different directions and take turns.
+								<p><span class="image left"><img src="/Projects/images/gallery/Project_pics/RoboCrane/L_Tx_block.png" alt="" /></span> For the <b>Left-hand wearable</b> device, we designed the circuit using <b>Arduino Nano</b> with <b>Accelerometer (tilt sensor)</b> to transmit the tilt position of the top of the palm on which the board was mounted. The <b>change in the tilt</b> was used to move the Crane Car in different directions and take turns.
 								<br> A mini <b>Joystick</b> was attached to the board to control the servo motor on which the camera was mounted on the crane; this facilitated the operator with visibility from a larger distance. 
 								<br> A <b>Power Button</b> was added to switch the crane module ON/OFF.</p>
 								<br>
 								<h4>Right Hand Controller (R-Tx)</h4>
-								<p><span class="image right"><img src="/Projects/images/gallery/Project_pics/RoboCrane/R_Tx_block.png" alt="" /></span> For the <b>Right hand wearable</b> device we designed using <b>Arduino Nano</b> with <b>Accelerometer</b> to judge the motion of the arm and provide same input to the <b>Crane Arm</b>. We used an <b>Electronic Compass</b> to measure the variation in angular displacement of hand and give analog value to the arduino.
-								<br> A <b>Flex Sensor</b> was added to capture the grip intensity and motion of the index fingure and thumb. </p>
+								<p><span class="image right"><img src="/Projects/images/gallery/Project_pics/RoboCrane/R_Tx_block.png" alt="" /></span> For the <b>Right-hand wearable</b> device, we designed using <b>Arduino Nano</b> with <b>Accelerometer</b> to judge the motion of the arm and provide the same input to the <b>Crane Arm</b>. We used an <b>Electronic Compass</b> to measure the variation in angular displacement of the hand and give analog value to the Arduino.
+								<br> A <b>Flex Sensor</b> was added to capture the grip intensity and motion of the index finger and thumb. </p>
 								<br>
 								<h4>Crane Car Controller (L-Rx)</h4>
-								<p><span class="image left"><img src="/Projects/images/gallery/Project_pics/RoboCrane/L_Rx_block.png" alt="" /></span> The <b>Crane Car and Camera</b> motions are handled by the Left hand motion and joystick using <b>Arduino Uno</b>. The transmitted data from the <b>Tilt Sensor</b> is mapped with two <b>DC gear motors</b> using the <b>Motor Driving IC</b> L293D that are connected to the wheels of the Crane Car.
+								<p><span class="image left"><img src="/Projects/images/gallery/Project_pics/RoboCrane/L_Rx_block.png" alt="" /></span> The <b>Crane Car and Camera</b> motions are handled by the Left-hand motion and joystick using <b>Arduino Uno</b>. The transmitted data from the <b>Tilt Sensor</b> is mapped with two <b>DC gear motors</b> using the <b>Motor Driving IC</b> L293D that are connected to the wheels of the Crane Car.
 								<br> The input from the <b>Joystick</b> is received and fed to the <b>Servo Motor</b> using which the camera movements are controlled. The <b>LED light</b> is controlled by the signal transmitted by the <b>Power Button</b>.</p>
 								<br>
 								<h4>Crane Arm Controller (R-Rx)</h4>
-								<p><span class="image right"><img src="/Projects/images/gallery/Project_pics/RoboCrane/R_Rx_block.png" alt="" /></span> The <b>Crane Arm</b> is contolled by the wearable from the right hand using <b>Arduino Due</b>. An <b>Accelerometer</b> ADXL335 is used as a <b>Tilt Sensor</b> and a <b>Magnetometer</b> HMC5883L is used as an <b>Electronic Compass</b> - Combination of both these readings are used while the user is moving arm to decide which <b>Servo Motor</b> needs to be moved.
+								<p><span class="image right"><img src="/Projects/images/gallery/Project_pics/RoboCrane/R_Rx_block.png" alt="" /></span> The <b>Crane Arm</b> is controlled by the wearable from the right hand using <b>Arduino Due</b>. An <b>Accelerometer</b> ADXL335 is used as a <b>Tilt Sensor</b> and a <b>Magnetometer</b> HMC5883L is used as an <b>Electronic Compass</b> - A combination of both these readings is used while the user is moving arm to decide which <b>Servo Motor</b> needs to be moved.
 								<br> A <b>Flex sensor</b> is used for generating variable resistance values and these are used to drive the movements of the <b>Gripper</b>. 
 								<br>
 								<hr />
 
 								<h4>Reflection & Application (now & next)</h4>
-								<p>We deviced and implemented the wearable gloves for both hands with above mentioned functions. 
-								<br> The <b>neutral/default value</b> of these devices was a tricky challenge we had to overcome. The problem was that the moment the power button was switched on the data was mapped to the car and so the motion imidiately began and we saw a lot of <b>mismatch of positional data</b> even when we used the combination of tilt sensor and electronic compass for the Crane Arm.
-								<br> We designed the circuts and also <b>build the RoboCrane structure from scratch</b>, a good amount of effort was spent in the mechanical lab to get the designed parts filled. Here, we saw a challenge regarding the balance of the Crane Car and the mounted Crane Arm on it. We had to re design the structure a few times to get the balance right and not let it trip over while moving the arm when in motion. 
-								<br> <b>Unfortunately,</b> we have lost the recordings and photographs of our work, but below are the circut connections and sole photograph of our creation.
+								<p>We devised and implemented a pair of wearable gloves for both hands with the above-mentioned functions. 
+								<br> The <b>neutral/default value</b> of these devices was a tricky challenge we had to overcome. The problem was that the moment the power button was switched on the data was mapped to the car and so the motion immediately began and we saw a lot of <b>mismatch of positional data</b> even when we used the combination of a tilt sensor and electronic compass for the Crane Arm.
+								<br> We designed the circuits and also <b>build the RoboCrane structure from scratch</b>, a good amount of effort was spent in the mechanical lab to get the designed parts filled. Here, we saw a <b>challenge</b> regarding the balance of the Crane Car and the mounted Crane Arm on it. We had to redesign the structure a few times to get the balance right and not let it trip over while moving the arm when in motion. 
+								<br> <b>Unfortunately,</b> we have lost the recordings and photographs of our work, but below are the circuit connections and sole photographs of our creation.
 								</p>
             
                                 <hr />
