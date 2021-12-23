@@ -25,6 +25,21 @@
 											<li><a href="/index.html">Home</a></li>
 											<li><a href="/Creativity/index.html">The Right Side</a></li>
 											<li><a href="/Projects/index.html">The Left Side</a></li>
+											<hr />
+										</ul>
+										<ul>	
+											<li><a href="/Projects/Cooper_AirPen.html">Cooper & Airpen</a></li>
+											<li><a href="/Projects/APM_Tranformation_BFSI.html">APM Transformation</a></li>
+											<li><a href="/Projects/RoboCrane.html">RoboCrane</a></li>
+											<li><a href="/Projects/ExperimentsWithAIGeneratedMedia.html">Experiments with AI-Generated Media</a></li>
+											<li><a href="/Projects/VoiceControlRobotArm.html">Voice Controlled Robot Arm</a></li>
+											<li><a href="/Projects/TouchlessGUI.html">Touchless GUI</a></li>
+											<li><a href="/Projects/LaughingOldMan.html">Laughing Old Man</a></li>
+											<li><a href="/Projects/MachineFirstOperations.html">Machine First Operations</a></li>
+											<li><a href="/Projects/SmartNetwork.html">Smart Network</a></li>
+											<li><a href="/Projects/PhyAi_Concept.html">PhyAi Concept</a></li>
+											<li><a href="/Projects/DirectorGAN_Concept.html">Director GAN Concept</a></li>
+											<li><a href="/Projects/VulnerabilityBasedAutomaticSoftwareUpgrade.html">Vulnerability based Automatic Software Upgrade</a></li>
 										</ul>
 									</div>
 								</li>
@@ -36,9 +51,9 @@
 					<article id="main">
 						<header>
 							<h2>Cooper and Airpen</h2>
-							<p>Cooper is a co-operating system which can 
+							<p>Cooper is a co-operating system that can 
 								<br>interact with the user using voice commands and responses 
-								<br>and is extended using an Airpen (Stick-mouse) that allows user 
+								<br>and is extended using an Airpen (Stick-mouse) that allows the user 
 								<br>to write in air and take digital notes, 
 								<br>while controlling the mouse and GUI</p>
 						</header>
@@ -46,7 +61,7 @@
 							<div class="inner">
 								
 								<h4>Motivation (Why)</h4>
-								<p>We intended to create a futuristic technology that will allow humans to interact with machines with gestures, voice and pointers. <b>Cooper</b> is also designed to help people who lack computer knowledge and make it as simple as talking to the machine to operate on it. <b>Airpen</b> was extended to make Cooper more tangible while interacting with the computer, it also serves as a great tool to take <b>digital notes</b>. Best thing about Cooper apart from its functionality and potential was its cost effectiveness; we implemented this <b>within $1.</b></p>
+								<p>We intended to create a futuristic technology that will allow humans to interact with machines with gestures, voice, and pointers. <b>Cooper</b> is also designed to help people who lack computer knowledge and make it as simple as talking to the machine to operate on it. <b>Airpen</b> was extended to make Cooper more tangible while interacting with the computer, it also serves as a great tool to take <b>digital notes</b>. Apart from its functionality and potential, the best thing about Cooper was its cost-effectiveness; we implemented this <b>within $1.</b></p>
 								<audio controls autoplay>
 									<source src="/Projects/images/gallery/Project_pics/Cooper_AirPen/Cooper_intro.wav" type="audio/wav">
 								</audio>
@@ -55,11 +70,11 @@
 								<h4>Techtics (What & How)</h4>
 								<p><span class="image left"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/AirpenAction.jpg" alt="" /></span><b> Cooper </b> has many techniques stitched together to bring it to life; these serve as different organs of Cooper. It is a Matlab and JAVA based software that uses image processing to track the <b>Airpen</b> (formerly known as Stick Mouse) to enable full GUI control of the computer as well as take digital notes or draw in air. It also uses Speech Processing to recognize the commands spoken by the user and responds to them with pre-recorded voice playbacks.
 								<br><b>Quick Trivia</b>: We were inspired by Tony Stark’s JARVIS & Harry Potter so combined both worlds together and created a Cooperating system that can be controlled via a wand & spells. </p>
-								<p><span class="image right"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/Cooper_sections.jpg" alt="" /></span>Cooper has 4 parts to it, all of these work together to give a more imersive experience, makes it adapt to interact with humans in a natural way. <br>
-                                <b>1. Image Processing : </b>We used the image processing sequence to convert the image to detect the color of the Airpen (red) for this we used <b>median filtering</b> followed by converting to <b>gray scale</b> and then to <b>binary scale</b>. then we mapped the centre of this detected pointer's centre to the mouse movements using <b>JAVA robot class</b>. <br>
-								<br><span class="image left"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/vSP_step.jpg" alt="" /></span><b>2. Speech Processing : </b>We used the Linear Predictive Coding (LPC) Speech processing technique for feature extraction of the voice commands from the users. The basic idea behind linear predictive analysis is that a speech sample can be approximated as a linear combination of past speech samples. By minimizing the sum of the squared differences (over a finite interval) between the actual speech samples and the linearly predicted ones, a unique set of predictor coefficients can be determined. All the required steps such as - <b>Pre-emphasis, Frame Blocking, Windowing, Autocorrelation Analysis, LPC Analysis and LPC Parameter Conversion to Cepstral coefficients</b> were utilized respectively to extract features for further processing. Then <b> Gaussian Mixture Modeling </b> was applied to maximize the likelihood of the parameter for recognition. First a recorded input voice command dataset from many users was collected and stored to train Cooper, there after we enabled direct microphone access to the users to see how the testing worked, we tuned the thresholding parameters (for de-noising) and used <b>Mahalanobis distance matching</b> to match the training data with the testing data for recognizing the voice commands. <br> 
-								<br><span class="image right"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/cooper_gui.jpg" alt="" /></span><b>3. Graphic User Interface : </b>We used Matlab Design Environment (GUIDE) to design a GUI for Cooper. We put togeter a menu that show cases the various features of Cooper and Airpen, this helped to explain the project in a structured manner to the evaluation pannel. We extended the use of the GUI by our Airpen and JAVA robot class to enable remote 'touchless' use of the computer. <br>
-								<br><b>4. Voice Assistance : </b>Many sets of my voice was recorded and used as audio playback to assist the GUI use and make Cooper more interactive, just like talking to a friend. Below is a playback example.</p>
+								<p><span class="image right"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/Cooper_sections.jpg" alt="" /></span>Cooper has 4 parts to it, all of these work together to give a more immersive experience, making it adapt to interact with humans in a natural way. <br>
+                                <b>1. Image Processing : </b>We used the image processing sequence to convert the image to detect the color of the Airpen (red) for this we used <b>median filtering</b> followed by converting to <b>gray scale</b> and then to <b>binary scale</b>. then we mapped the centre of this detected pointer's centre to the mouse movements using the <b>JAVA robot class</b>. <br>
+								<br><span class="image left"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/vSP_step.jpg" alt="" /></span><b>2. Speech Processing : </b>We used the Linear Predictive Coding (LPC) Speech processing technique for feature extraction of the voice commands from the users. The basic idea behind linear predictive analysis is that a speech sample can be approximated as a linear combination of past speech samples. By minimizing the sum of the squared differences (over a finite interval) between the actual speech samples and the linearly predicted ones, a unique set of predictor coefficients can be determined. All the required steps such as - <b>Pre-emphasis, Frame Blocking, Windowing, Autocorrelation Analysis, LPC Analysis, and LPC Parameter Conversion to Cepstral coefficients</b> were utilized respectively to extract features for further processing. Then <b> Gaussian Mixture Modeling </b> was applied to maximize the likelihood of the parameter for recognition. First, a recorded input voice command dataset from many users was collected and stored to train Cooper, thereafter we enabled direct microphone access to the users to see how the testing worked, we tuned the thresholding parameters (for de-noising) and used <b>Mahalanobis distance matching</b> to match the training data with the testing data for recognizing the voice commands. <br> 
+								<br><span class="image right"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/cooper_gui.jpg" alt="" /></span><b>3. Graphic User Interface : </b>We used Matlab Design Environment (GUIDE) to design a GUI for Cooper. We put together a menu that showcases the various features of Cooper and Airpen, this helped to explain the project in a structured manner to the evaluation panel. We extended the use of the GUI by our Airpen and JAVA robot class to enable remote 'touchless' use of the computer. <br>
+								<br><b>4. Voice Assistance : </b>Many sets of my voice were recorded and used as audio playback to assist the GUI use and make Cooper more interactive, just like talking to a friend. Below is a playback example.</p>
 								<audio controls>
 									<source src="/Projects/images/gallery/Project_pics/Cooper_AirPen/Cooper_choose.wav" type="audio/wav">
 								</audio>
@@ -73,18 +88,18 @@
 								</div>
 								<br>
 								<p>We were able to develop a prototype of a stick mouse without using any complex hardware yet wireless. This was an approach to make an intelligent and next generation Human Machine Interface. The results mentioned above are eminent proof that this technology is not so far away.
-									Even with all these limitations (listed below) and problems we faced we were able to get a good output and result out of this project. The research work for this project also allowed us to read and learn about Digital Image Processing, Speech Processing, Graphic User Interface and Human Machine Interfaces.
+									Even with all these limitations (listed below) and problems we faced we were able to get a good output and result out of this project. The research work for this project also allowed us to read and learn about Digital Image Processing, Speech Processing, Graphic User Interface, and Human Machine Interfaces.
 									We would like to work more on this field of ‘No-touch technology’. Thus concluding on a note: ‘the future is not so far away’.
 								<br>	
-								<br>	<span class="image right"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/FaceFeatureDetection.jpg" alt="" /></span> We were also intending to add Face recognition for security and personalized profiles of different users. Will try it out in next version. Me and my mentor (Dr. Amrita Biswas) are visible in the image testing our face and feature recognition code.
+								<br>	<span class="image right"><img src="/Projects/images/gallery/Project_pics/Cooper_AirPen/FaceFeatureDetection.jpg" alt="" /></span> We were also intending to add Face recognition for security and personalized profiles of different users. Will try it out in the next version. Me and my mentor (Dr. Amrita Biswas) are visible in the image testing our face and feature recognition code.
 									</p>
-								<p>We found few <b>limitations</b> of this technique. Some of which are mentioned here. 
-								<br>	1. Background colours were creating hindrance and made it difficult to access the all the functions. If there were more than the specified colour markers the clicking option became difficult as the data acquisition increased in each loop. Hence, creating chances for webcam lag.
-								<br>		This limitation could be tackled with if there is plain background with no shades of RGB present or ‘pointer’ is used in a dark room. Also, better processing speed machines/computers will also work better.
+								<p>We found few a <b>limitations</b> of this technique. Some of which are mentioned here. 
+								<br>	1. Background colours were creating hindrance and made it difficult to access all the functions. If there were more than the specified colour markers the clicking option became difficult as the data acquisition increased in each loop. Hence, creating chances for webcam lag.
+								<br>		This limitation could be tackled if there is a plain background with no shades of RGB present or a ‘pointer’ is used in a dark room. Also, better processing speed machines/computers will also work better.
 								<br>	2. It depended a lot on the quality of the webcam. We found that better the quality better were the results.
 								<br>	3. The light intensity on the webcam was a real problem. The webcam got stuck when more light was flashed on it.
-								<br>	4. Few words were effectively trained using LPC technique. For more number of words to be recognised, large database was required. Also, similar types of word were difficult to recognise.
-								<br>		Different feature extraction and modelling technique can be used like MFCC, Pattern recognition & Hidden Markov Method (HMM) etc
+								<br>	4. Few words were effectively trained using the LPC technique. For more number of words to be recognized, a large database was required. Also, similar types of words were difficult to recognise.
+								<br>		Different feature extraction and modeling techniques can be used like MFCC, Pattern recognition & Hidden Markov Method (HMM), etc
 								</p>
                                 <audio controls>
 									<source src="/Projects/images/gallery/Project_pics/Cooper_AirPen/Cooper_thank you.wav" type="audio/wav">
