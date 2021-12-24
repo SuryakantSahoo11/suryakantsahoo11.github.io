@@ -52,25 +52,25 @@
 						<header>
 							<h2>Smart Network</h2>
 							<p>Designed and implemented automatic network device discovery,
-							<br> realtime topology based monitoring and 
+							<br> real-time topology based monitoring, and 
 							<br> Automatic security compliance checks and actions</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 								
 								<h4>Motivation (Why)</h4>
-								<p>An American privately held global food corporation was looking for a solution that will make their networking devices smart, stable and secure. I took this responsibility to build and implement a solution that is robust, almost realtime and works 24x7 automatically.</p>
+								<p>An American privately held global food corporation was looking for a solution that will make their networking devices smart, stable, and secure. I took this responsibility to build and implement a solution that is robust, almost real-time, and works 24x7 automatically.</p>
 								
 								<hr />
 
 								<h4>Techtics (What & How)</h4>
-								<p>Network devices used such as routers, switches, load balancers, firewalls, etc. are needed to have a good connectivity in the offices, appliances and between datacentres. They are very important to have a smooth and functioning work environment. 
+								<p>Network devices used such as routers, switches, load balancers, firewalls, etc. are needed to have good connectivity in the offices, appliances and between datacenters. They are very important to have a smooth and functioning work environment. 
 								<br> Whenever a new device was installed in any new office anywhere in the world to expand the work connectivity, we used a <b>BMC ADDM tool</b> (Atrium Discovery and Dependency Mapping) to discover the hardware instantly and register in the <b>CMDB</b> (configuration management database) for the network devices. 
-								<br> Once this device was registered to the CMDB, a <b>SAS BObj tool</b> was set to poll the CMDB for any changes and if there were any new changes seen, it generated a text report and stored in a Windows server. <span class="image right"><img src="/Projects/images/gallery/Project_pics/SmartNetwork/SNMP protocol.jpg" alt="" /></span>
-								<br> The windows server was connected to the linux server on which the monitoring tool was installed using a <b>CIFS mount point</b> (Common Internet File System). There was a sceduled <b>cronjob</b> for every 5 min to poll these text file entry changes and if there were any changes found, a <b>bash script</b> was written to run to add these new devices to the monitoring tool <b>MicroFocus NNMi</b> (Network Node Manager).
+								<br> Once this device was registered to the CMDB, a <b>SAS BObj tool</b> was set to poll the CMDB for any changes and if there were any new changes seen, it generated a text report and stored it in a Windows server. <span class="image right"><img src="/Projects/images/gallery/Project_pics/SmartNetwork/SNMP protocol.jpg" alt="" /></span>
+								<br> The windows server was connected to the Linux server on which the monitoring tool was installed using a <b>CIFS mount point</b> (Common Internet File System). There was a scheduled <b>cronjob</b> for every 5 min to poll these text file entry changes and if there were any changes found, a <b>bash script</b> was written to run to add these new devices to the monitoring tool <b>MicroFocus NNMi</b> (Network Node Manager).
 								<br> <span class="image left"><img src="/Projects/images/gallery/Project_pics/SmartNetwork/NNMI.jpg" alt="" /></span> Once added to NNMi, the network hardware was monitored 24x7 for any observed anomalies using <b>ICMP</b> (Internet Control Message Protocol) and <b>SNMP</b> (Simple Network Management Protocol) the required <b>OID</b> (Object Identifier) for the device was added via preloaded <b>MIB</b> (Management Information Base) files. We also configured automated <b>SNMP Trap</b> capture to get alert as soon as there was any issue with any of the added network device. 
 								<br> Finally, to make the network secure, these new device entries were automatically passed from NNMi to <b>HPE Network Automation Tool</b> for checking network compliances and <b>ACL</b> checks (Access Control List) to ensure no external breaches.</p>
-								<p>Additionally, I used a <b>location based topology mapping</b> so that it becomes very easy for the Operations team to locate the faulty device and fix it in matter of minutes. For example, if the device was installed in London and faced a CPU spike, in the <b>automated ticket</b> generated using the integration with <b>BMC Remedy and TrueSight tool</b>, location information of the device will be passed; based on which correct support team will automatically be notified to take required action. For someone who is monitoring the <b>dashboard</b> on the NNMi tool, they will be able to see the topology node <b>turn red</b> indicating issue in that location.</p>
+								<p>Additionally, I used a <b>location based topology mapping</b> so that it becomes very easy for the Operations team to locate the faulty device and fix it in matter of minutes. For example, if the device was installed in London and faced a CPU spike, in the <b>automated ticket</b> generated using the integration with <b>BMC Remedy and TrueSight tool</b>, location information of the device will be passed; based on which correct support team will automatically be notified to take required action. For someone who is monitoring the <b>dashboard</b> on the NNMi tool, they will be able to see the topology node <b>turn red</b> indicating an issue in that location.</p>
 								<div class="row gtr-50 gtr-uniform">
 									<div class="col-8"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/SmartNetwork/Auto-Ticketing.png" alt="" /></span></div>
 								</div>
@@ -81,9 +81,9 @@
 								<div class="row gtr-50 gtr-uniform">
 									<div class="col-10"><span class="image fit"><img src="/Projects/images/gallery/Project_pics/SmartNetwork/FlowDiagram_SmartNetwork.png" alt="" /></span></div>
 								</div>
-								<p>This end to end solution and implementation took of a lot off a lot of efforts that were put for finding <b>Root Cause</b> and <b>spoting the location</b> of the faulty device. Enabling smoother communication experience to the whole company in their every branch of the world. This solution was implemented for a very large scale environment consisting of around 24 thousand network devices.
+								<p>This end-to-end solution and implementation reduced a lot of effort that was put into finding the <b>Root Cause</b> and <b>spotting the location</b> of the faulty device. Enabling smoother communication experience to the whole company in their every branch of the world. This solution was implemented for a very large-scale environment consisting of around 24 thousand network devices.
 								<br> It also reduced a lot of manual work to register device details in CMDB and manually add the device in NNMi and HP Network Automation tools. Kept the CMDB and Monitoring data in sync making the information reliable and easier to work upon.
-								<br> I received <b>appriciations from the Clients</b> for taking proactive measures to integrate diverse tools and crafting a robust automated network solution.</p>
+								<br> I received <b>appreciation from the Client</b> for taking proactive measures to integrate diverse tools and crafting a robust automated network solution.</p>
                                 
                                 <hr />
                                 
